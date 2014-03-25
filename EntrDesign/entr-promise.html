@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Entr | Discover & Win!</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- JS
+  ================================================== -->
+	<!--Global -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	
+	<!--Slider -->
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.easing.js"></script>
+
+	<!--Slabtext -->
+	<script src="js/jquery.slabtext.js"></script>
+
+  	<!-- Page Specific -->
+	<script src="js/bubbler.js"></script>
+
+  	<!--Custom -->
+	<script src="js/custom.js"></script>
+
+	<!-- CSS
+  ================================================== -->
+	<!--Global -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--Slider -->	
+	<link href="js/assets/jquery.bxslider.css" rel="stylesheet" />
+
+	<!-- Slab Text -->
+	<link href="js/assets/slabtext.css" rel="stylesheet" />
+	
+	<!-- Animate -->
+	<link rel="stylesheet" href="stylesheets/animate.css">
+	
+	<!-- Icons (w/Retina) -->
+	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheets/ie.css" />
+	<![endif]-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('#entr-promises-mob').bxSlider({
+			  auto: true,
+			  pause: 4000,
+			  autoDelay: 2,
+			  pager: false,
+			  
+			});			
+		  
+		  $("#bubbles").bubbler();
+		});		
+	</script>
+	
+</head>
+<body style="min-height: 665px;">
+
+	<!-- Header
+  ================================================== -->
+	<div class="band header">
+		<div class="container">
+			<div class="fifteen columns top-bar">
+
+				<a href="#!">
+					<div class="mob-nav" id="mob-nav-lnk"><i class="icon-align-justify"></i></div>
+				</a>
+			
+				<a href="#"><div class="logo"></div></a>
+	
+				<ul class="nav">
+					<a href="#!" id="discover-lnk"><li>Discover & Win!<i class="icon-chevron-down"></i></li></a>
+					<a href="view-all.html"><li>Recent Competitions</li></a>
+				</ul>
+				
+				
+				<div class="drop" id="discover-drop">
+					<div class="pointer"></div>
+					
+					<ul>
+						<a href="#">
+							<li>
+								<div class="comp-thumb" style="background-image: url('images/prizes/3.jpg');"></div>							
+								<h5>Savile Row</h5>
+								<p>Win a Tailor Made Suit worth £900!</p>	
+							</li>
+						</a>
+						<a href="#">
+							<li>
+								<div class="comp-thumb" style="background-image: url('images/prizes/3.jpg');"></div>							
+								<h5>Savile Row</h5>
+								<p>Win a Tailor Made Suit worth £900!</p>	
+							</li>
+						</a>
+						<a href="#">
+							<li class="nobrdr">
+								<div class="comp-thumb" style="background-image: url('images/prizes/3.jpg');"></div>							
+								<h5>Savile Row</h5>
+								<p>Win a Tailor Made Suit worth £900!</p>	
+							</li>
+						</a>
+						
+						<a href="view-all.html"><li class="discover-all">View All Competitions <i class="icon-chevron-right"></i></li></a>
+					</ul>
+				</div>
+			
+				<ul class="login">
+					<a href="#!" id="user-lnk" class="toggle">
+						<li>
+							<div class="user-logged-in">
+								<div class="user-thumb" style="background-image: url('https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/t1/c0.0.48.48/p48x48/1959592_10201923408793049_1726931849_t.jpg');">
+								</div>
+								
+								<p>Scott <hidden>Graham</hidden></p>
+								<i class="icon-chevron-down"></i>
+							</div>
+						</li>
+					</a>
+				</ul>
+				
+				<div class="drop" id="user-drop" class="toggle">
+						<div class="pointer"></div>
+					<ul>
+						<a href="#"><li><i class="icon-user"></i> My Profile</li></a>
+						<a href="#"><li><i class="icon-trophy"></i> My Competitions</li></a>
+						<a href="#"><li><i class="icon-envelope"></i> Email Settings</li></a>
+						<a href="#"><li><i class="icon-comments"></i> Talk to Us</li></a>
+						<a href="#"><li class="nobrdr"><i class="icon-off"></i> Logout</li></a>
+					</ul>
+				</div>
+			</div><!-- fifteen column layout -->
+		</div><!-- container -->
+	</div><!--- header band -->
+
+	<!-- Focus on the Modal/Drop -->
+	<div class="dropdown-overlay"></div>
+
+	<!-- Bannr Slider (Li Represents Slide)
+  ================================================== -->  
+	<div class="band banner" id="promise-banner" style="background-image: url('images/banners/entr-promise.jpg');">
+		<div class="banner-bottom-overlay">			
+			<div class="container entr-promises">
+				<div class="promise-item">
+					<div class="promise-ico">1</div>
+					<h3>No Costs</h3>
+					<p>There are no hidden charges for entering an Entr competition. No membership fees. No premium rate texts. No purchases required.</p>
+
+				</div>
+
+				<div class="promise-item">
+					<div class="promise-ico">2</div>
+
+					<h3>No Spam</h3>
+					<p>We don’t sell your details to ANY third parties. Ever. No spam, no cold calling. Your details are safe and protected with us.</p>
+				</div>
+
+				<div class="promise-item">
+					<div class="promise-ico">3</div>
+
+					<h3>No Catches</h3>
+					<p>Entr really is as simple as it seems, happy winning! <br /><a href="#">Register & Win for Free!</a></p>
+														
+				</div>				
+			</div>
+
+			<!--- Mobile Sldier --->
+			<div class="container entr-promises-mob">
+				<ul id="entr-promises-mob">				
+					<li>
+						<div class="promise-item">
+							<div class="promise-ico">1</div>
+							<h3>No Costs</h3>
+							<p>There are no hidden charges for entering an Entr competition. No membership fees. No premium rate texts. No purchases required.</p>
+		
+						</div>
+					</li>
+					
+					<li>
+						<div class="promise-item">
+							<div class="promise-ico">2</div>
+		
+							<h3>No Spam</h3>
+							<p>We don’t sell your details to ANY third parties. Ever. No spam, no cold calling. Your details are safe and protected with us.</p>
+						</div>				
+					</li>
+					
+					<li>
+						<div class="promise-item">
+							<div class="promise-ico">3</div>
+		
+							<h3>No Catches</h3>
+							<p>Entr really is as simple as it seems, happy winning! <br /><a href="#">Register & Win for Free!</a></p>
+						</div>						
+					</li>	
+				</ul>	
+			</div>						
+		</div>
+	
+		<div class="container">		
+				<div id="bubbles"></div>
+
+			<div class="fifteen columns">		
+				<div class="prize-promise-wrap animated bounceInDown">
+					<div class="prize-promise-title"></div>
+					
+					<div class="prize-promise-intro">Not all online competitions sites are reputable. <span>We’re different</span>.<a href="#"><div class="entr-btn" id="get-started-btn"></div></a><p>Here is our promise to you...</p></div>
+					
+				</div>
+			</div> <!-- fifteen column layout -->
+		</div><!-- container -->
+		
+		<!-- Dynamic Bokeh Overlay -->
+	</div><!-- banner band -->
+	
+	<!-- Prize Circles
+  ================================================== 
+	<div class="band content">
+		<div class="prize-finder-footer">
+			<div class="prize-preview-wrap">
+				<a href="#"><div class="entr-prize-preview" style="background-image: url('http://images.entr.co/liveimages/3598.png');"></div></a>
+				<a href="#"><div class="entr-prize-preview" style="background-image: url('http://images.entr.co/liveimages/2595.png');"></div></a>
+				<a href="#"><div class="entr-prize-preview" style="background-image: url('http://images.entr.co/liveimages/2592.png');"></div></a>
+				<a href="#"><div class="entr-prize-preview" style="background-image: url('http://images.entr.co/liveimages/2589.png');"></div></a>
+				<a href="#"><div class="entr-prize-preview" style="background-image: url('http://images.entr.co/liveimages/2550.png');"></div></a>
+				<a href="#"><div class="entr-prize-preview" style="background-image: url('http://images.entr.co/liveimages/2533.png');"></div></a>
+				<a href="#"><div class="entr-prize-preview" style="background-image: url('http://images.entr.co/liveimages/2537.png?timestamp=1395106457036');"></div></a>
+				<a href="#"><div class="entr-prize-preview" style="background-image: url('http://images.entr.co/liveimages/1512.jpg?timestamp=1395106500172');"></div></a>
+			</div>
+		</div>
+	</div><!-- content band -- >
+	
+	
+	<!-- Content
+  ================================================== -->	
+	<div class="band content">
+		<div class="container">
+			    <h5 class="page-title">Feeling Lucky?</h5>
+			
+			<div class="five columns competition">
+			    <article>
+			        <div class="item">
+			            <div class="item-overlay">
+			                <h4>Win Hugo Boss Music</h4>
+			            </div>
+			            <div class="item-img">
+			                <a href="/win/Entr_Competition_Win_Hugo_Boss_Music"><img src="http://images.entr.co/liveimages/2573.png" alt="CompetitionImage"></a>
+			            </div>
+			            <h5><span>Hugo Boss</span> Limited Edition Fragrance</h5>
+			            <p>A classic manly fragrance with a makeover. Entr now to win a bottle of Hugo Boss Man Music Limited Edition.</p>
+			            <div class="item-stats">
+			                <ul>
+			                    <li><i class="fa fa-clock-o"></i> 25 Days<hidden>, 5 Hours, 5 Minutes</hidden></li>
+			                </ul>
+			                <a href="/win/Entr_Competition_Win_Hugo_Boss_Music"><div class="entr-btn entr-btn-grid"></div></a>
+			            </div>
+			        </div>
+			    </article>
+			</div>
+		
+			<div class="five columns competition">
+			    <article>
+			        <div class="item">
+			            <div class="item-overlay">
+			                <h4>Win Divergent Trilogy</h4>
+			            </div>
+			            <div class="item-img">
+			                <a href="/win/Entr_Competition_Win_Divergent_Book_Trilogy"><img src="http://images.entr.co/liveimages/2586.png" alt="CompetitionImage"></a>
+			            </div>
+			            <h5><span>Divergent</span> In Cinemas Soon</h5>
+			            <p>Set in a dystopian future, the Divergent series is the latest movie franchise to come out of the young adult book genre. Entr now to win the book trilogy.</p>
+			            <div class="item-stats">
+			                <ul>
+			                    <li><i class="fa fa-clock-o"></i> 22 Days<hidden>, 5 Hours, 5 Minutes</hidden></li>
+			                </ul>
+			                <a href="/win/Entr_Competition_Win_Divergent_Book_Trilogy"><div class="entr-btn entr-btn-grid"></div></a>
+			            </div>
+			        </div>
+			    </article>
+			</div>
+		
+			<div class="five columns competition">
+			    <article>
+			        <div class="item">
+			            <div class="item-overlay">
+			                <h4>Win Ciaté Polishes</h4>
+			            </div>
+			            <div class="item-img">
+			                <a href="/win/Entr_Competition_Win_Ciate_Polish_Collection"><img src="http://images.entr.co/liveimages/2558.png" alt="CompetitionImage"></a>
+			            </div>
+			            <h5><span>Ciaté</span> New Collection</h5>
+			            <p>Nail the spring/summer 2014 pastel trend with this 'porcelain' finish nail polish set from Ciaté. Entr now to win the Doll House Collection.</p>
+			            <div class="item-stats">
+			                <ul>
+			                    <li><i class="fa fa-clock-o"></i> 20 Days<hidden>, 5 Hours, 5 Minutes</hidden></li>
+			                </ul>
+			                <a href="/win/Entr_Competition_Win_Ciate_Polish_Collection"><div class="entr-btn entr-btn-grid"></div></a>
+			            </div>
+			        </div>
+			    </article>
+			</div>        
+		
+			<div class="five columns competition">
+			    <article>
+			        <div class="item">
+			            <div class="item-overlay">
+			                <h4>Win Mars Hot Chocolate</h4>
+			            </div>
+			            <div class="item-img">
+			                <a href="/win/Entr_Competition_Win_Mars_Hot_Chocolate"><img src="http://images.entr.co/liveimages/2549.png" alt="CompetitionImage"></a>
+			            </div>
+			            <h5><span>Mars</span> New Range Available Now</h5>
+			            <p>The company that brought you your favourite chocolate bars now brings you the same flavours in drink form. Entr to win an assortment of chocolate drinks from Mars.</p>
+			            <div class="item-stats">
+			                <ul>
+			                    <li><i class="fa fa-clock-o"></i> 18 Days<hidden>, 5 Hours, 5 Minutes</hidden></li>
+			                </ul>
+			                <a href="/win/Entr_Competition_Win_Mars_Hot_Chocolate"><div class="entr-btn entr-btn-grid"></div></a>
+			            </div>
+			        </div>
+			    </article>
+			</div>
+		
+			<div class="five columns competition">
+			    <article>
+			        <div class="item">
+			            <div class="item-overlay">
+			                <h4>Win A Sony SmartBand</h4>
+			            </div>
+			            <div class="item-img">
+			                <a href="/win/Entr_Competition_Win_Sony_SmartBand"><img src="http://images.entr.co/liveimages/2521.png" alt="CompetitionImage"></a>
+			            </div>
+			            <h5><span>Sony SmartBand</span> Out This Month</h5>
+			            <p>A wristband that logs your life and lets you see your daily movements, communications, entertainment and more. Entr for your chance to win a SmartBand.</p>
+			            <div class="item-stats">
+			                <ul>
+			                    <li><i class="fa fa-clock-o"></i> 15 Days<hidden>, 5 Hours, 5 Minutes</hidden></li>
+			                </ul>
+			                <a href="/win/Entr_Competition_Win_Sony_SmartBand"><div class="entr-btn entr-btn-grid"></div></a>
+			            </div>
+			        </div>
+			    </article>
+			</div>
+		
+			<div class="five columns competition">
+			    <article>
+			        <div class="item">
+			            <div class="item-overlay">
+			                <h4>Win A Girl Called Jack</h4>
+			            </div>
+			            <div class="item-img">
+			                <a href="/win/Entr_Competition_Win_A_Girl_Called_Jack_Cookbook"><img src="http://images.entr.co/liveimages/2528.png" alt="CompetitionImage"></a>
+			            </div>
+			            <h5><span>A Girl Called Jack</span> Cookbook Out Now</h5>
+			            <p>In her first cookbook, Jack Monroe shares 100 delicious and budget friendly recipes. Entr now to win a copy of A Girl Called Jack.</p>
+			            <div class="item-stats">
+			                <ul>
+			                    <li><i class="fa fa-clock-o"></i> 13 Days<hidden>, 5 Hours, 5 Minutes</hidden></li>
+			                </ul>
+			                <a href="/win/Entr_Competition_Win_A_Girl_Called_Jack_Cookbook"><div class="entr-btn entr-btn-grid"></div></a>
+			            </div>
+			        </div>
+			    </article>
+			</div>
+		
+			<div class="five columns competition">
+			    <article>
+			        <div class="item">
+			            <div class="item-overlay">
+			                <h4>Win Gravity 3D</h4>
+			            </div>
+			            <div class="item-img">
+			                <a href="/win/Entr_Competition_Win_Gravity"><img src="http://images.entr.co/liveimages/2537.png" alt="CompetitionImage"></a>
+			            </div>
+			            <h5><span>Gravity</span> Now Out On 3D Blu-Ray</h5>
+			            <p>An astronaut completely alone in the vastness and blackness of space. Entr now to win Gravity on 3D limited edition steelbook Blu-Ray.</p>
+			            <div class="item-stats">
+			                <ul>
+			                    <li><i class="fa fa-clock-o"></i> 11 Days<hidden>, 5 Hours, 5 Minutes</hidden></li>
+			                </ul>
+			                <a href="/win/Entr_Competition_Win_Gravity"><div class="entr-btn entr-btn-grid"></div></a>
+			            </div>
+			        </div>
+			    </article>
+			</div>
+		
+			<div class="five columns competition">
+			    <article>
+			        <div class="item">
+			            <div class="item-overlay">
+			                <h4>Win An Addict Jumper</h4>
+			            </div>
+			            <div class="item-img">
+			                <a href="/win/Entr_Competition_Win_Addict_Jumper"><img src="http://images.entr.co/liveimages/2513.png" alt="CompetitionImage"></a>
+			            </div>
+			            <h5><span>Addict </span> SS14 Line Out Now</h5>
+			            <p>We're addicted to competitions. Addict are addicted to clothing. Entr this competition to win a wasp print jumper from Addict.</p>
+			            <div class="item-stats">
+			                <ul>
+			                    <li><i class="fa fa-clock-o"></i> 8 Days<hidden>, 5 Hours, 5 Minutes</hidden></li>
+			                </ul>
+			                <a href="/win/Entr_Competition_Win_Addict_Jumper"><div class="entr-btn entr-btn-grid"></div></a>
+			            </div>
+			        </div>
+			    </article>
+			</div>
+		
+			<div class="five columns competition">
+			    <article>
+			        <div class="item">
+			            <div class="item-overlay">
+			                <h4>Win A Crate Of Ice Tea</h4>
+			            </div>
+			            <div class="item-img">
+			                <a href="/win/Entr_Competition_Win_Harry_Bromptons_Ice_Tea"><img src="http://images.entr.co/liveimages/1512.jpg" alt="CompetitionImage"></a>
+			            </div>
+			            <h5><span>Harry Brompton's</span> Now Available At Waitrose</h5>
+			            <p>Kenyan tea mixed with grain spirit and infused with a hint of citrus. Entr now to win a crate of 6 bottles of Harry Brompton's London Ice Tea and toast to the sunshine.</p>
+			            <div class="item-stats">
+			                <ul>
+			                    <li><i class="fa fa-clock-o"></i> 6 Days<hidden>, 5 Hours, 5 Minutes</hidden></li>
+			                </ul>
+			                <a href="/win/Entr_Competition_Win_Harry_Bromptons_Ice_Tea"><div class="entr-btn entr-btn-grid"></div></a>
+			            </div>
+			        </div>
+			    </article>
+			</div>
+		</div>
+	</div><!-- content band -- >
+	
+	
+
+	<!-- Footer
+  ================================================== -->	
+	<div class="band footer">
+		<div class="container">
+		
+			<div class="two columns">
+				<div class="footer-logo-pointer"><i class="icon-caret-down"></i></div>
+				<div class="footer-logo"></div>
+			</div>
+			
+			<div class="eight columns">
+				<div class="footer-links">
+					<ul>
+						<li><a href="#">About Entr</a></li>
+						<li><a href="#">Get Involved</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-copy">
+					&copy Copyright Entr.co 2013, made with <i class="icon-heart"></i> in London, UK.
+				</div>
+			</div>
+			
+			<div class="five columns">
+				<div class="footer-social">
+					<ul>
+						<a href="#"><li><div class="entr-btn fb-login-btn fb-entr"><i class="icon-facebook"></i><span>Find Us On Facebook</span></div></li></a>
+						<a href="#"><li><div class="entr-btn twitter-login-btn"><i class="icon-twitter"></i></div></li></a>					
+						<a href="#"><li><div class="entr-btn plus-login-btn"><i class="icon-google-plus"></i></div></li></a>					
+					</ul>
+				</div>
+			</div>
+			
+		</div><!--- container -->
+	</div><!-- footer band-->
+	
+</body>
+</html>

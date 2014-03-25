@@ -1,0 +1,17 @@
+/* --- Focus on IE 8 --- */
+
+.band.header {
+	background-color: #FFFFFF!important;
+}
+
+.mob-overlay {
+	display: none!important;
+}
+
+.item-overlay {
+	background-color: #000000!important;
+}
+
+hidden {
+	display: none!important;
+}

@@ -1,0 +1,771 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Entr | Discover & Win!</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- JS
+  ================================================== -->
+	<!--Global -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	
+	<!--Slider -->
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.easing.js"></script>
+
+	<!-- Fancybox (Popups) -->
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!--Slabtext -->
+	<script src="js/jquery.slabtext.js"></script>
+
+	<!--Sticky Scroll -->
+	<script src="js/jquery.stickyscroll.js"></script>
+	
+  	<!--Custom -->
+	<script src="js/custom.js"></script>
+
+	<!-- CSS
+  ================================================== -->
+	<!--Global -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--Slider -->	
+	<link href="js/assets/jquery.bxslider.css" rel="stylesheet" />
+
+	<!-- Slab Text -->
+	<link href="js/assets/slabtext.css" rel="stylesheet" />
+	
+	<!-- Animate -->
+	<link rel="stylesheet" href="stylesheets/animate.css">
+	
+	<!-- Icons (w/Retina) -->
+	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheets/ie.css" />
+	<![endif]-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+			  auto: true,
+			  preventDefaultSwipeY: false,
+			  swipeThreshold: 70,
+			  pause: 7000,
+			  autoDelay: 2,
+			  autoHover: true
+			});
+		});
+
+		$(document).ready(function() {
+			$(".modal").fancybox({
+				maxWidth	: 800,
+				maxHeight	: 600,
+				fitToView	: false,
+				width		: '70%',
+				height		: '70%',
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: 'none',
+				closeEffect	: 'none'
+			});
+
+			$(".promise-modal").fancybox({
+				maxWidth	: 300,
+				maxHeight	: 600,
+				fitToView	: false,
+				width		: '70%',
+				height		: '70%',
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: 'elastic',
+				closeEffect	: 'elastic'
+			});
+		});		
+	</script>
+</head>
+<body id="home">
+
+	<!-- Header
+  ================================================== -->
+	<div class="band header">
+		<div class="container">
+			<div class="fifteen columns top-bar">
+
+				<a href="#!">
+					<div class="mob-nav" id="mob-nav-lnk"><i class="icon-align-justify"></i></div>
+					
+					<!---
+					<div class="mob-country">
+						<a href="#!" id="mob-country-lnk"><li class="country-select"><img src="images/flags/gb.png" /> <i class="icon-chevron-down"></i> </li></a>					
+					</div>
+					--->
+				</a>
+			
+				<a href="index.html"><div class="logo"></div></a>
+	
+				<ul class="nav">
+					<!--<a href="#!" id="country-lnk"><li class="country-select"><img src="images/flags/gb.png" /> <i class="icon-chevron-down"></i></li></a>-->
+					<a href="#!" id="discover-lnk"><li>Discover & Win!<i class="icon-chevron-down"></i></li></a>
+					<a href="#!"><li>Recent Competitions</li></a>
+				</ul>
+				
+				
+				<div class="drop" id="discover-drop">
+						<div class="pointer"></div>
+					<ul>
+						<a href="fashion-beauty.html">
+							<li>
+								<div class="comp-thumb" style="background-image: url('images/articles/examples/fashion-beauty/Block3.jpg');"></div>							
+								<h5>Molton Brown</h5>
+								<p>The Patchouli & Saffron Collection</p>	
+							</li>
+						</a>
+						<a href="exhibitions-events.html">
+							<li>
+								<div class="comp-thumb" style="background-image: url('images/articles/examples/exhibitions-events/Block4.jpg');"></div>							
+								<h5>Walking With Dinosaurs</h5>
+								<p>UK Arena Tour</p>	
+							</li>
+						</a>
+						<a href="sport-health.html">
+							<li class="nobrdr">
+								<div class="comp-thumb" style="background-image: url('images/articles/examples/sport-health/Block1.jpg');"></div>							
+								<h5>Gwyneth Paltrow</h5>
+								<p>Signed Copy of "It's All Good"</p>	
+							</li>
+						</a>
+						
+						<a href="view-all.html"><li class="discover-all">View All Competitions <i class="icon-chevron-right"></i></li></a>
+					</ul>
+				</div>
+				
+				<div class="drop" id="country-drop">
+						<div class="pointer"></div>
+					<ul>
+						<a href="#!">
+							<li>
+								<img src="images/flags/gb.png" />	
+								<span>United Kingdom</span>					
+							</li>
+						</a>
+						<a href="#!">
+							<li>
+								<img src="images/flags/us.png" />	
+								<span>United States</span>							
+							</li>
+						</a>
+						<a href="#!">
+							<li class="nobrdr">
+								<img src="images/flags/fr.png" />							
+								<span>France</span>							
+							</li>
+						</a>						
+					</ul>
+				</div>				
+			
+				<ul class="login">
+					<a href="#"><li><div class="entr-btn fb-login-btn"><i class="icon-facebook"></i></div></li></a>
+					<a href="#"><li><div class="entr-btn plus-login-btn"><i class="icon-google-plus"></i></div></li></a>
+					<a href="#"><li><div class="entr-btn entr-login-btn"></div></li></a>
+
+					<a href="#" id="mob-login-lnk" class="toggle"><li><div class="entr-btn mob-login-btn"><i class="icon-user"></i></div></li></a>
+
+				</ul>		
+				
+				<!--- Logged Out (Mob) --->
+				<div class="drop" id="mob-login-drop" class="toggle">
+						<div class="pointer"></div>
+					<ul>
+						<a href="#!"><li><div class="entr-btn fb-login-btn fb-entr"><i class="icon-facebook"></i><span>Find Us On Facebook</span></div></li></a>
+						<a href="#!"><li><div class="entr-btn twitter-login-btn"><i class="icon-twitter"></i></div></li></a>					
+						<a href="#!"><li><div class="entr-btn entr-login-btn"></div></li></a>					
+					</ul>
+				</div>				
+				
+				<!--- Logged In -->
+				<!---<ul class="login">
+					<a href="#!" id="user-lnk" class="toggle">
+						<li>
+							<div class="user-logged-in">
+								<div class="user-thumb" style="background-image: url('https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c0.3.75.75/s50x50/993421_10200977671950219_834312805_t.jpg');">
+								</div>
+								
+								<p>Scott <hidden>Graham</hidden></p>
+								<i class="icon-chevron-down"></i>
+							</div>
+						</li>
+					</a>
+				</ul>-->
+								
+				<div class="drop" id="user-drop" class="toggle">
+						<div class="pointer"></div>
+					<ul>
+						<a href="#"><li><i class="icon-user"></i> My Profile</li></a>
+						<a href="#"><li><i class="icon-trophy"></i> My Competitions</li></a>
+						<a href="#"><li><i class="icon-envelope"></i> Email Settings</li></a>
+						<a href="#"><li><i class="icon-comments"></i> Talk to Us</li></a>
+						<a href="#"><li class="nobrdr"><i class="icon-off"></i> Logout</li></a>
+					</ul>
+				</div>
+			</div><!-- fifteen column layout -->
+		</div><!-- container -->
+	</div><!--- header band -->
+
+
+	<!-- Focus on the Modal/Drop -->
+	<div class="dropdown-overlay"></div>
+
+	<!-- Bannr Slider (Li Represents Slide)
+  ================================================== -->
+	<ul class="bxslider">
+		<li id="home-slide">
+			<div class="band banner animated fadeIn" style="background-image: url('http://www.entr.co/Content/Images/home.jpg'); animation-delay:0.2s; -webkit-animation-delay:0.2s;">
+				<div class="container animated fadeIn" style="animation-delay:1s; -webkit-animation-delay:1s;">
+					<div class="fifteen columns">
+						<div class="banner" id="home-slide">
+							<h1>What's New? <strong>Discover & Win!</strong></h1>
+							
+							<div id="home-slide-tags">
+								<ul>
+									<a href="technology.html"><li>Win The Nokia Lumia 920</li></a>
+									<a href="food-drink.html"><li>Win Tooty Fruity Cider</li></a>
+									<a href="fashion-beauty.html"><li>Win The Lilac Rose Collection</li></a>
+									<a href="men.html"><li>Win The Bulldog Grooming Kit</li></a>
+									<a href="entertainment-movie.html"><li>Win The Games of Thrones Box Set</li></a>
+									<a href="kids.html"><li>Win GAP Kids Goodies</li></a>
+									<a href="other.html"><li>Win Electric Cinema Tickets</li></a>
+									<a href="sport-health.html"><li>Win A Signed Copy Of "It's All Good"</li></a>
+									<a href="home-garden.html"><li>Win A Qui Est Paul Birdhouse</li></a>
+									<a href="exhibitions-events.html"><li>Win Tickets to Walking With Dinosaurs</li></a>
+								</ul>
+							</div>
+							
+							<div id="home-slide-btn" class="animated bounceInDown" style="animation-delay:1.4s; -webkit-animation-delay:1.4s;">
+								<div class="entr-btn" id="get-started-btn"></div>
+							</div>
+						</div>
+					</div> <!-- fifteen column layout -->
+				</div><!-- container -->
+			</div><!-- banner band -->
+		</li>
+		
+		<li>
+		    <a href="/win/Entr_Competition_Win_The_Hunger_Games_Catching_Fire">
+		        <div class="band banner half-slide" style="background-image: url('http://images.entr.co/liveimages/3590.jpg');">
+		            <div class="container">
+		                <div class="fifteen columns">
+		                    <div class="banner" id="example2" style="box-shadow:none;">
+		                    </div>
+		                </div><!-- fifteen column layout -->
+		            </div><!-- container -->
+		        </div><!-- banner band -->
+		    </a>
+		</li>		
+		
+		<li id="promise-slide">
+			<div class="band banner">
+				<div class="container">				
+					<div class="fifteen columns">		
+						<div class="prize-promise-wrap animated bounceInDown">
+							<div class="prize-promise-title"></div>
+								
+							<div class="prize-promise-intro">
+								<span>We’re Entr.</span> We love competitions. Everyone loves competitions! <p>Here's what you can expect...</p>
+								<a href="entr-promise.html">
+									<div id="home-slide-btn"><div class="entr-btn" id="prize-promise-btn"></div></div>
+								</a>
+							</div>
+						</div>
+					</div> <!-- fifteen column layout -->
+				</div><!-- container -->
+			</div><!-- banner band -->
+		</li>
+	</ul>		
+
+	<!-- Content
+  ================================================== -->
+	<div class="band editorial">
+		<div class="container">
+			
+			<!--- Editorial (Featured)  --->
+			<div class="ten columns featured">
+				<h5 class="page-title">Featured Competitions</h5>
+							
+				<article>
+					<div class="featured-item">
+						<div class="featured-banner">
+							
+							<div class="item-img">
+								<a href="entertainment-game.html"><img src="http://images.entr.co/liveimages/3603.jpg" /></a>
+								<!---
+								<div class="item-friends">
+									<h5>Friends Entered:</h5>
+									
+								         <div class="friend-thumb" style="background-image: url('https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/1118584_1126321685_603923756_q.jpg');"></div>
+								         
+								         <div class="friend-thumb" style="background-image: url('https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/624033_1255285323_776915443_q.jpg');"></div>		
+								         
+								         <div class="friend-thumb" style="background-image: url('https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c8.5.59.59/s50x50/559427_10150723763919709_2125701110_t.jpg');"></div>
+
+								         <div class="friend-thumb" style="background-image: url('https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/623746_737717278_2073247270_q.jpg');"></div>
+
+								         <div class="friend-thumb" style="background-image: url('https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/1118397_702813887_925953641_q.jpg');"></div>									</div>
+								--->         
+								
+							</div>
+						</div>						
+						
+						<div class="featured-logo">
+							<a href="#"><img src="http://images.entr.co/liveimages/3602.jpg" /></a>
+						</div>
+						
+						<h4><span>Lavazza</span> On The Go Espresso</h4>
+						<p>It's the first portable coffee machine. It's the Espressgo from Italian coffee company, Lavazza. Entr now to win one.</p>
+						
+						<div class="item-stats">
+							<ul>
+								<li><i class="icon-user"></i> 211 <hidden>Entries</hidden></li>
+								<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+							</ul>
+							
+							<a href="#"><div class="entr-btn entr-btn-grid"></div></a>
+						</div>							
+					</div>
+				</article>
+				
+					<div class="clear"></div>
+				
+				<article>
+					<div class="featured-item">
+						<div class="featured-banner">
+							<div class="item-img">
+								<a href="#"><img src="http://images.entr.co/liveimages/3592.jpg" /></a>
+							</div>
+						</div>
+						
+						<div class="featured-logo">
+							<a href="#"><img src="http://images.entr.co/liveimages/3591.jpg" /></a>
+						</div>
+						
+						<h4><span>The Hunger Games</span> Catching Fire Out Now</strong></h4>
+						<p>Entr to win The Hunger Games and The Hunger Games: Catching Fire in a double movie DVD set. May the odds be ever in your favour.</p>
+						
+						<div class="item-stats">
+							<ul>
+								<li><i class="icon-user"></i> 211 <hidden>Entries</hidden></li>
+								<li><i class="icon-time"></i> 2 Days<hidden>, 19 Hours, 18 Hour</hidden></li>
+							</ul>
+							
+							<a href="entertainment-movie.html"><div class="entr-btn entr-btn-grid"></div></a>
+						</div>						
+					</div>
+				</article>				
+				
+			</div> 
+			
+			<!-- Sidebar
+		  ================================================== -->			
+			
+			<div class="five columns sidebar">
+				<h5 class="page-title top-10-prizes">Top Prizes</h5>
+
+				<div class="prize-radar">
+					<ul>
+						<a href="technology.html">
+							<li class="prize-alt">
+								<div class="prize-img" style="background-image: url('http://images.entr.co/liveimages/3607.png');"></div>
+								<h5>Prize Title</h5>
+								<div class="entr-btn"></div>
+							</li>
+						</a>
+						
+						<a href="food-drink.html">
+							<li>
+								<div class="prize-img" style="background-image: url('http://images.entr.co/liveimages/3598.png');"></div>
+								<h5>Prize Title</h5>
+								<div class="entr-btn"></div>
+							</li>
+						</a>
+						
+						<a href="fashion-beauty.html">
+							<li class="prize-alt">
+								<div class="prize-img" style="background-image: url('http://images.entr.co/liveimages/2595.png');"></div>
+								<h5>Prize Title</h5>
+								<div class="entr-btn"></div>
+							</li>		
+						</a>
+						
+						<a href="men.html">				
+							<li>
+								<div class="prize-img" style="background-image: url('http://images.entr.co/liveimages/2592.png');"></div>
+								<h5>Prize Title</h5>
+								<div class="entr-btn"></div>
+							</li>
+						</a>
+						
+						<a href="entertainment-movie.html">
+							<li class="prize-alt prize-hidden">
+								<div class="prize-img" style="background-image: url('http://images.entr.co/liveimages/2589.png');"></div>
+								<h5>Prize Title</h5>
+								<div class="entr-btn"></div>
+							</li>
+						</a>
+						
+						<a href="kids.html">
+							<li class="prize-hidden">
+								<div class="prize-img " style="background-image: url('http://images.entr.co/liveimages/2550.png');"></div>
+								<h5>Prize Title</h5>
+								<div class="entr-btn"></div>
+							</li>						
+						</a>
+					</ul>
+				</div>
+				
+				<div class="sidebar-promo" id="sb-promo-1">
+					<a href="entr-promise.html"><img src="images/promos/prize-promise.jpg" /></a>
+				</div>
+				
+				<div class="sidebar-promo" id="sb-promo-2">
+					<div class="sb-social">					
+						<ul>
+							<a href="#"><li><i class="icon-facebook"></i></li></a>
+							<a href="#"><li><i class="icon-twitter"></i></li></a>
+							<a href="#"><li><i class="icon-google-plus"></i></li></a>
+							<a href="#"><li style="margin-right: 0;"><i class="icon-pinterest"></i></li></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!--- container -->
+	</div><!-- content band -->
+	
+	<!-- Competitions
+  ================================================== -->	
+	<div class="band content">
+		<div class="container">
+			<h5 class="page-title">Popular Competitions</h5>			
+			
+				<div class="clear"></div>
+							
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay">
+								<h4>Win The Nokia Lumia 920</h4>
+							</div>
+							
+							<div class="item-img">
+								<a href="technology.html"><img src="http://images.entr.co/liveimages/2573.png" /></a>
+							</div>
+							
+							<h5><span>Nokia</span> Launches The New Lumia 920 Smartphone</h5>
+							<p>Big, bold and colourful. No not us! In this instance we’re referring to the new Lumia 920 from Nokia.</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="technology.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+							
+							
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay">
+								<h4>Win The Bulldog Grooming Kit</h4>
+							</div>
+							
+							<div class="item-img">
+								<a href="men.html"><img src="http://images.entr.co/liveimages/2586.png" /></a>
+						</div>							
+							<h5><span>Bulldog</span> - One Step At A Time Travel Grooming Kit</h5>
+							<p>Just in time for the summer holidays men’s skincare brand Bulldog have released a limited-edition kit of travel size products.</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="men.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay">
+								<h4>Win Fruity Irish Cider</h4>
+							</div>
+							
+							<div class="item-img">
+								<a href="food-drink.html"><img src="http://images.entr.co/liveimages/2558.png" /></a>								
+							</div>
+														
+							<h5><span>Rekorderlig</span> - New Summer Passionfruit Flavour</h5>
+							<p>The new collection includes seven flavours, made with different spirits, fresh fruits and garnishes to create a refreshing and unique style of mixology.</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="food-drink.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+					<div class="clear"></div>
+								
+				<h5 class="page-title">Be The First!</h5>							
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay">
+								<h4>Win The Qui Est Paul Birdhouse</h4>
+							</div>
+							
+							<div class="item-img">
+								<a href="home-garden.html"><img src="http://images.entr.co/liveimages/2549.png" /></a>
+						</div>
+						
+							<h5><span>Qui Est Paul</span> Designs</h5>
+							<p>Bird of a feather will definitely flock together in the stylish Picto birdhouse from French design house Qui Est Paul.</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="home-garden.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay">
+								<h4>Win A £100 Gap Gift Voucher</h4>
+							</div>
+							
+							<div class="item-img">
+								<a href="kids.html"><img src="http://images.entr.co/liveimages/2521.png" /></a>								
+							</div>
+								
+							<h5><span>GapKids</span> New DVF ♥ GapKids Collection</h5>
+							<p>A hit with celebrities, socialites and fashion fans since the ‘70s it’s now available for the most stylish pre-teens thank to the second collaboration between DVF and GapKids.</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="kids.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay">
+								<h4>Win Tickets to Walking With Dinosaurs</h4>
+							</div>
+							
+							<div class="item-img">
+								<a href="exhibitions-events.html"><img src="http://images.entr.co/liveimages/2528.png" /></a>								
+							</div>
+							
+							<h5><span>Walking With Dinosaurs</span> UK Arena Tour</h5>
+							<p>To celebrate the newest UK tour of Walking With Dinosaurs we have a family ticket to give away for the Glasgow, Newcastle, London, Nottingham or Liverpool dates.</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> 23 Days<hidden>, 4 Hours, 1 Hour</hidden></li>
+								</ul>
+								
+								<a href="exhibitions-events.html"><div class="entr-btn entr-btn-grid"></div></a>
+							</div>
+						</div>
+					</article>
+				</div>		
+									
+		</div><!--- container -->
+	</div><!-- content band -- >
+	
+	<!-- Closed Competitions
+  ================================================== -->	
+	<div class="band content content-footer">
+		<div class="container">
+			<h5 class="page-title">Closed Competitions</h5>			
+			
+				<div class="clear"></div>
+							
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay">
+								<h4>Win The Nixon Newton Wristwatch</h4>
+							</div>
+							
+							<div class="item-img">
+								<a href="#"><img src="http://images.entr.co/liveimages/1475.png" /></a>
+								
+								<div class="item-friends">
+									<!-- No Entries -->			
+								</div>
+						</div>
+							<h5><span>Stylish Nixon</span> 'The Newton' Wristwatch</h5>
+							<p> The watch is back. Win the Nixon Newton in limited edition summer 2013 colours in today's entr competition.</p>
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> <hidden>23/</hidden>03/2013</li>
+								</ul>
+								
+								<a href="#!"><div class="entr-btn entr-btn-grid entr-btn-closed"><i class="icon-lock"></i><hidden>Closed</hidden></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+								
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay">
+								<h4>Win A Jumbo Joe Portable Barbecue</h4>
+							</div>
+							
+							<div class="item-img">
+								<a href="#"><img src="http://images.entr.co/liveimages/1468.png" /></a>
+							</div>	
+													
+							<h5><span>New</span> Weber Jumbo Joe</h5>
+							<p>Grab some burgers and a couple of potatoes and Entr to win in today's competition. May the sauce be with you!</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> <hidden>23/</hidden>03/2013</li>
+								</ul>
+								
+								<a href="#!"><div class="entr-btn entr-btn-grid entr-btn-closed"><i class="icon-lock"></i><hidden>Closed</hidden></div></a>
+							</div>
+						</div>
+					</article>
+				</div>	
+				
+				<div class="five columns competition">
+					<article>
+						<div class="item">
+							<div class="item-overlay">
+								<h4>Win Kilchoman Premium Whiskey</h4>
+							</div>
+							
+							<div class="item-img">
+								<a href="#"><img src="http://images.entr.co/liveimages/1485.jpg" /></a>
+							</div>
+														
+							<h5><span>Kilchoman</span> Launches New Premium Range</h5>
+							<p>Kilchoman has just added a new range to its Islay Single Malt Scotch Whisky collection called Loch Gorm and we have a bottle to give away in today's Entr competition.</p>
+
+							<div class="item-stats">
+								<ul>
+									<li><i class="icon-user"></i> 211</li>
+									<li><i class="icon-time"></i> <hidden>23/</hidden>03/2013</li>
+								</ul>
+								
+								<a href="#!"><div class="entr-btn entr-btn-grid entr-btn-closed"><i class="icon-lock"></i><hidden>Closed</hidden></div></a>
+							</div>
+						</div>
+					</article>
+				</div>									
+
+
+		</div><!--- container -->
+	</div><!-- content band -- >	
+	
+	<!-- Footer
+  ================================================== -->	
+	<div class="band footer">
+		<div class="container">
+		
+			<div class="two columns">
+				<div class="footer-logo-pointer"><i class="icon-caret-down"></i></div>
+				<div class="footer-logo"></div>
+			</div>
+			
+			<div class="eight columns">
+				<div class="footer-links">
+					<ul>
+						<li><a href="about.html">About Entr</a></li>
+						<li><a href="about.html">Get Involved</a></li>
+						<li><a href="about.html">Contact Us</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-copy">
+					&copy Copyright Entr.co 2013, made with <i class="icon-heart"></i> in London, UK.
+				</div>
+			</div>
+			
+			<div class="five columns">
+				<div class="footer-social">
+					<ul>
+						<a href="#!"><li><div class="entr-btn fb-login-btn fb-entr"><i class="icon-facebook"></i><span>Find Us On Facebook</span></div></li></a>
+						<a href="#!"><li><div class="entr-btn twitter-login-btn"><i class="icon-twitter"></i></div></li></a>					
+						<a href="#!"><li><div class="entr-btn plus-login-btn"><i class="icon-google-plus"></i></div></li></a>					
+					</ul>
+				</div>
+			</div>
+			
+		</div><!--- container -->
+	</div><!-- footer band-->
+	
+</body>
+</html>
